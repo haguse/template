@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38f6f3a993.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Section 1 s -->
+    <section class="container-fluid sec1">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- navigasyon bar baslangic-->
+                <a class="navbar-brand" href="#">
+                    <span class="text-warning">...</span>
+                    <span class="text-white">Rent a Car</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rezervasyon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kampanyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofisler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Araçlarımız</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kurumsal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav><!-- navigasyon bar bitis-->
+
+            <div class="row ">
+                <div class="col-md-6 text-white">
+                    <h2 class="display-4 textc">... Rent a Car <br> İçiniz Rahat Olsun <br></h2>
+                    <p class="textc"><br> Tüm araçlarımızı teslim öncesi dezenfekte ediyoruz.</p>
+                </div>
+                <div class="col-md-4 offset-2 bg-white rightMenu">
+                    <form action="" class="form-header">
+                        <h3>Yolculuğunuza Başlayın</h3>
+                        <div class="form-group">
+                            <label for="">Alış Ofisi</label>
+                            <input type="text" class="form-control" placeholder="Kayseri Talas">
+                        </div>
+                        <div class="d-flex">
+                            <div class="form-group mr-2">
+                                <label for="">Alış Tarihi</label>
+                                <input type="text" class="form-control" id="book.pick.date" placeholder="Tarih">
+                            </div>
+
+
+                            <div class="form-group ml-2">
+                                <label for="">İade Tarihi</label>
+                                <input type="text" class="form-control" id="book.off.date" placeholder="Tarih">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Alış Zamanı</label>
+                            <input type="text" class="form-control" placeholder="Saat">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary w-100" value="Araç Ara">
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Section 1 f-->
+    <!-- Section 2 s-->
+    <section class="container sec2">
+        <form action="">
+
+            <div class="row">
+                <div class="col-lg">
+                    <div class="form-group">
+                        <label for="">Marka Seç</label>
+                        <select name="brand" id="" class="form-control">
+                            <option value="1">Volkswagen</option>
+                            <option value="2">Fiat</option>
+                            <option value="3">Renault</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Peugeot</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <label for="">Yakıp Tipi</label>
+                    <select name="fuel" id="" class="form-control">
+                        <option value="1">Benzin</option>
+                        <option value="2">Mazot</option>
+                        <option value="3">Benzin + LPG</option>
+                    </select>
+                </div>
+                <div class="col-lg"><label for="">Araç Yılı</label>
+                    <select name="year" id="" class="form-control">
+                        <option value="1">2020-2017</option>
+                        <option value="2">2016-2013</option>
+                        <option value="3">2013-2010</option>
+                        <option value="5">Daha Eski</option>
+                    </select></div>
+                <div class="col-lg"><label for="">Ücret Limiti</label>
+                    <select name="price" id="" class="form-control">
+                        <option value="1">250-350 ₺</option>
+                        <option value="2">350-500 ₺</option>
+                        <option value="3">500-750 ₺</option>
+                        <option value="4">750-1000 ₺</option>
+                        <option value="5">1000 + ₺</option>
+                    </select></div>
+                <div class="col-lg">
+                    <div class="form-group">
+                        <input type="sunbmit" class="form-control btn btn-primary" value="Ara">
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+    <!-- Section 2 f-->
+    <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Section 3 s-->
+    <section class="container sec3">
+        <p>Servislerimiz</p>
+        <h3>Servislerimiz </h3>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 etiket">
+                <i class="fas fa-car"></i>
+                <h4>7/24 Araç Desteği</h4>
+                <p>Lüks ve ekonomik araç kiralama firmamız siz değerli müşterilerimizin 7/24 hizmetinizdedir.</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 etiket">
+                <i class="fas fa-map-marked-alt"></i>
+                <h4>Ücretsiz Adrese Teslim</h4>
+                <p>Ücretsiz adrese teslim imkanıyla. Siz evinizden çıkmayın biz dezenfekte edilmiş aracınızı ayağınıza
+                    kadar getirelim.
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 etiket">
+                <i class="fas fa-bus-alt"></i>
+                <h4>VIP Minibüs Kiralama</h4>
+                <p>Filosunda bulunan özel dizayn edilmiş 6+1 8+1 ve 17+1 minibüslerle ... Rent a Car her zaman
+                    hizmetinizdedir </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 etiket">
+                <i class="fas fa-plane-departure"></i>
+                <h4>Havaalanı Transfer</h4>
+                <p>Uzman ve en az 2 dil bilen kadrosuyla havaalanı transfer ihtiyaçlarınıza profesyonel çözümler
+                    sunuyoruz.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Section 3 f-->
+    <!-- Section 4 s-->
+    <section class="container-fluid sec4">
+        <p>Arabanızı Seçin</p>
+        <h3>Arabanızı Seçin</h3>
+
+        <div class="row p-4">
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">300 ₺</span>
+                    </div>
+                    <h5>Car 1</h5>
+                    <p>... </p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">200 ₺</span>
+                    </div>
+                    <h5>Car 2</h5>
+                    <p>... </p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">600 ₺</span>
+                    </div>
+                    <h5>Car 3</h5>
+                    <p> ...</p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">450 ₺</span>
+                    </div>
+                    <h5>Car 4</h5>
+                    <p>... 
+                    </p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">400 ₺</span>
+                    </div>
+                    <h5>Car 5</h5>
+                    <p>...</p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">400 ₺</span>
+                    </div>
+                    <h5>Car 6</h5>
+                    <p>...</p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.png)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">800 ₺</span>
+                    </div>
+                    <h5>Car 7</h5>
+                    <p>... </p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3">
+                <div class="etiket">
+                    <div class="resim d-flex justify-content-start align-items-end"
+                        style="background:url(images/car.jpg)"></div>
+                    <div class="fiyat shadow">
+                        <span id="para">550 ₺</span>
+                    </div>
+                    <h5>Car 8<h5>
+                    <p>...</p>
+                    <div class="buttons">
+                        <button class="btn">Hemen Kirala</button>
+                        <button class="btn">Detaylar</button></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- Section 4 f-->
+    <!-- Section 5 s-->
+    <section class="container-fluid sec5">
+        <div class="overlay"></div>
+        <div class="container">
+            <p id="sec5p">Nasıl Çalışıyoruz ?</p>
+            <h2 id="sec5h">Nasıl Çalışıyoruz ?</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="icerik">
+                        <div class="sembol"><i class="fas fa-globe"></i></i></div>
+                        <h3>Online Rezervasyon Yapın</h3>
+                        <p>İnternet üzerinden rahatlıkla istediğiniz aracı rezerve edebiliriniz.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icerik">
+                        <div class="sembol"><i class="fas fa-compress-alt"></i></i></div>
+                        <h3>Siz gelin yada biz getirelim</h3>
+                        <p>Ücretsiz olarak aracınızı ayağınıza getirebiliriz.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icerik">
+                        <div class="sembol"><i class="fas fa-user-tie"></i></i></div>
+                        <h3>Şoför ile <br> kullanın</h3>
+                        <p>Profesyonel şoförlerimiz hizmetinize hazırdır.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icerik">
+                        <div class="sembol"><i class="far fa-calendar-alt"></i></div>
+                        <h3>Uzun Süreli Kiralama</h3>
+                        <p>Daha uygun fiyatlar ile 1 ay ve üzeri kiralama yapabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 f-->
+    <!-- footer s-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>...</h3>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>                        
+                    </ul>
+
+                </div>
+               <!-- <div class="col-md-3"> Ek Footer Alanı (Gerekirse)
+                    <h3>Information</h3>
+                    <ul class="footerlist">
+                        <li><a href="">About</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="col-md-3 iletisim">
+                    <h3>İletişim</h3>
+                    <ul class="footerlist">
+                        <li><i class="fas fa-envelope-square"></i>...</li>
+                        <li><i class="fas fa-envelope-square"></i>...</li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer f-->
+</body>
+
+</html>
